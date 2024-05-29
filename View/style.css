@@ -175,3 +175,48 @@ body{
   width: (100% - 70px);
   margin-left: 70px;
 }
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dashboard {
+  flex: 1 1 200px;
+  max-width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.dashboard h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.dashboard p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.patrimonios {
+  background-color: #4CAF50; /* Verde */
+}
+
+.produtos {
+  background-color: #2196F3; /* Azul */
+}
+
+.aleatorio {
+  background-color: #FF9800; /* Laranja */
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+      flex-basis: calc(50% - 20px);
+  }
+}
